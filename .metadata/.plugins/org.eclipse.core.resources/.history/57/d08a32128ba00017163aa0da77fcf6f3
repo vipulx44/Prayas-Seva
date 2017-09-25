@@ -1,0 +1,14 @@
+<?php 
+//setup file
+#setup file
+/* setup 
+ * 
+ * 
+ * 
+ * file
+ */
+
+$site_title='Prayas Seva Sanstha';
+$page_title='Home Page';
+
+?>
