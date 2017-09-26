@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+	<div class="container">
+
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	  
+	    <ul class="navbar-nav">
+	    	
+	    	<?php 
+	    	
+	    	$q="SELECT * FROM pages";
+			
+			$r= mysqli_query($dbc, $q);
+			
+			while($nav=mysqli_fetch_assoc($r)){
+				
+			?>
+			<li class="nav-item">
+	        	<a class="nav-link <?php if($pageid==$nav['id']){echo "active";} ?>" href="?page=<?php echo $nav['id']; ?>"><?php echo $nav['label']; ?> <span class="sr-only">(current)</span></a>
+	      	</li>
+	    	
+			
+			<?php } ?>
+	    	
+	    	
+	   
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Features</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Mission</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Accomplishments</a>
+	      </li>
+	     
+	    </ul>
+
+	    </div>
+
+  </div>
+
+</nav><!-- End Main Navigation -->

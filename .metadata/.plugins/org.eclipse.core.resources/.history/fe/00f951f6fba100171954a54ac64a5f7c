@@ -18,14 +18,14 @@
 	
 	<body>
 		
-			<?php include(D_TEMPLATE.'/navigation.php'); //Main Navigation ?> 
+			<?php include('template/navigation.php'); //Main Navigation ?> 
 					
 			<div class="container">
 				<h1 style= " margin-top:20px;"><?php echo $page["header"]; ?></h1>
 				<p><?php echo $page["body"]; ?></p>
 			</div>
 			
-			<?php include(D_TEMPLATE.'/footer.php'); //Page Footer ?>
+			<?php include('template/footer.php'); //Page Footer ?>
 	
 		<?php include('config/js.php'); ?>
 	

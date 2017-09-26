@@ -6,7 +6,7 @@ $dbc = mysqli_connect('localhost','vipul','1234','prayasmain') OR die("Could Not
 
 //Functions
 include('functions/data.php');
-include('functions/template.php');
+include('fuctions/template.php');
 
 //Constants
 define('D_TEMPLATE','template');
