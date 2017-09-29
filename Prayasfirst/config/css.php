@@ -22,4 +22,15 @@
 			  line-height: 60px; /* Vertically center the text there */
 			  background-color: #f5f5f5;
 			}
+	#console-debug{
+		
+			position: absolute;
+			top=0;
+			left=0;
+			width: 30%;
+			background-color: #ffffff;
+		
+		
+	}
+	
 </style>

@@ -1,0 +1,53 @@
+<?php include('config/setup.php'); ?>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title><?php echo $page["title"].' | '.$site_title;?></title>
+		
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<?php include('config/css.php');?>
+    	<?php include('config/js.php'); ?>
+    	
+    	<!-- FONT AWESOME-->
+    	<script src="https://use.fontawesome.com/3ce65aca62.js"></script>
+    	
+    	<!-- JQUERY -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	
+    	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    	
+  
+  		
+
+  	</head>	
+	
+	<body>
+		
+			<?php include(D_TEMPLATE.'/navigation.php'); //Main Navigation ?> 
+					
+			<div class="container">
+				<h1 style= " margin-top:20px;"><?php echo $page["header"]; ?></h1>
+				<?php echo $page["body_formatted"]; ?>
+				
+				<?php if(isset($_GET['debug']) == 1) { ?> 
+				<pre>
+				<?php print_r($page); ?>
+				</pre>
+				<?php } ?>
+			</div>
+			
+			<?php include(D_TEMPLATE.'/footer.php'); //Page Footer ?>
+	
+		
+		
+		<div id="console-debug">
+			This is debug console
+		</div>
+		
+		
+	</body>
+	
+	
+</html>

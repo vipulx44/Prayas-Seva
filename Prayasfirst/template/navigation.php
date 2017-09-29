@@ -1,4 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	
+	<button id="btn-debug" class="btn btn-light"><i class="fa fa-bug" aria-hidden="true"></i></button>
 
 	<div class="container">
 
