@@ -1,8 +1,0 @@
-<?php 
-//setup file
-
-$dbc = mysqli_connect('localhost','vipul','','prayasmain');
-$site_title='Prayas Seva Sanstha';
-$page_title='Home Page';
-
-?>

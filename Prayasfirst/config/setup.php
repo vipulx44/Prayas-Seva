@@ -4,13 +4,17 @@
 
 $dbc = mysqli_connect('localhost','vipul','1234','prayasmain') OR die("Could Not connect because:".mysqli_connect_error());
 
+//Constants
+define('D_TEMPLATE','template');
+
+
 //Functions
 include('functions/data.php');
 include('functions/template.php');
 
-//Constants
-define('D_TEMPLATE','template');
+//Site Setup
 
+$debug= data_setting_value($dbc,'debug-status');
 
 $site_title='Prayas Seva Sanstha';
 
@@ -25,5 +29,7 @@ if(isset($_GET['page'])){
 
 //Page Setup here
 $page=data_page($dbc, $pageid);
+
+
 
 ?>

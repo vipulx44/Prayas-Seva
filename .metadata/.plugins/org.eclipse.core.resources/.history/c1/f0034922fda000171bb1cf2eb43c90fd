@@ -1,8 +1,0 @@
-<?php 
-//setup file
-
-$dbc = mysqli_connect('localhost','vipul','12345','prayasmain') OR die("Could Not connect because:".mysqli_connect_error());
-$site_title='Prayas Seva Sanstha';
-$page_title='Home Page';
-
-?>

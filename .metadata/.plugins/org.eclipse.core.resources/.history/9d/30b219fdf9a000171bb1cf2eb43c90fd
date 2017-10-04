@@ -1,9 +1,0 @@
-<?php 
-//setup file
-
-$dbc = mysqli_connect('localhost','usename','password','databasename');
-
-$site_title='Prayas Seva Sanstha';
-$page_title='Home Page';
-
-?>

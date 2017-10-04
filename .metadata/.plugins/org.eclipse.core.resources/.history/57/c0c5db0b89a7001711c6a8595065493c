@@ -1,0 +1,12 @@
+<div id="console-debug" >
+	
+	<?php
+	$vars=get_defined_vars();
+	 ?>
+	<pre>
+		<?php 
+print_r($page); 
+print_r($vars);
+		?>
+	</pre>
+</div>

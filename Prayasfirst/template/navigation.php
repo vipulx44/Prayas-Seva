@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	
+	<?php if($debug==1){ ?>
 	<button id="btn-debug" class="btn btn-light"><i class="fa fa-bug" aria-hidden="true"></i></button>
-
+	<?php } ?>
 	<div class="container">
 
 	  <div class="collapse navbar-collapse" id="navbarNav">
